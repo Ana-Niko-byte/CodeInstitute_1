@@ -41,3 +41,10 @@ a{
     border-bottom: 1px solid black;
 }
 
+.header_image{
+    border: 3px solid red;
+    background-color: var(--darkgreen);
+    background-image: url("photos_1/Succulent_Far.jpeg");
+    height: 400px;
+    background-repeat: no-repeat;
+}
