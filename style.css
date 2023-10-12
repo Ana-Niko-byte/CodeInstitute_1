@@ -28,6 +28,7 @@ li{
     list-style: none;
     margin-right: 20px;
     font-size: 15px;
+    padding-bottom: 5px;
 }
 
 li:nth-child(3){
@@ -37,5 +38,6 @@ li:nth-child(3){
 a{
     text-decoration: none;
     color: var(--darkgrey);
+    border-bottom: 1px solid black;
 }
 
