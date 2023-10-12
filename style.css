@@ -10,3 +10,32 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+nav{
+    background-color: var(--lightgreen);
+    height: 50px;
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+li:nth-child(3){
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--darkgrey);
+}
+
