@@ -61,4 +61,12 @@ a{
     transform: translateY(100PX);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    transition: height width 0.3s;
+}
+
+@media all and (max-width: 450px){
+    .blur{
+        height: 520px;
+        width: 300px;
+    }
 }
