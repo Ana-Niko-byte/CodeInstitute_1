@@ -1,0 +1,46 @@
+:root{
+    --lightgreen: rgb(163, 211, 163);
+    --darkgreen: rgb(28, 66, 28);
+    --lightgrey: rgb(209, 209, 209);
+    --darkgrey: rgb(34, 34, 34);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: rgb(0, 0, 0, 0.9);
+    height: 70px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+li:nth-child(3){
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--darkgrey);
+    border-bottom: 1px solid black;
+    color: white;
+}
