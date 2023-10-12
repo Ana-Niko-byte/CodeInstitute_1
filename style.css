@@ -12,8 +12,11 @@
 }
 
 nav{
-    background-color: var(--lightgreen);
-    height: 50px;
+    background-color: rgb(19, 19, 19);
+    height: 70px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
 }
 
 ul{
@@ -39,12 +42,23 @@ a{
     text-decoration: none;
     color: var(--darkgrey);
     border-bottom: 1px solid black;
+    color: white;
 }
 
 .header_image{
-    border: 3px solid red;
     background-color: var(--darkgreen);
     background-image: url("photos_1/Succulent_Far.jpeg");
-    height: 400px;
+    height: 700px;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blur{
+    height: 800px;
+    width: 700px;
+    margin: 0 auto;
+    transform: translateY(100PX);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
