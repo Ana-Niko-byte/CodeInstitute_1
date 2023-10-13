@@ -19,6 +19,12 @@ nav{
     width: 100%;
 }
 
+.logo{
+    max-width: 50px;
+    position: absolute;
+    margin-top: 10px;
+}
+
 ul{
     height: 100%;
     display: flex;
