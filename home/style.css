@@ -73,7 +73,7 @@ a:active{
 }
 
 .blur{
-    height: 400px;
+    height: 310px;
     width: 700px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.4);
@@ -90,6 +90,7 @@ a:active{
 
 h1{
     margin: 20px 0;
+    font-size: 40px;
 }
 
 h2{
@@ -109,14 +110,12 @@ h2{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
-    border: 1px solid green;
+    height: 75px;
 }
 
 .fa-brands{
     padding: 20px;
     transition: filter 0.1s ease;
-    margin: 0 10px;
 }
 
 .fa-instagram{
@@ -128,22 +127,47 @@ h2{
 }
 
 .about{
+    background-image: url("../photos_1/leaves-background.webp");
+    background-position: center;
+    height: 500px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.about-over{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
-    border: 1px solid red;
+    height: 100%;
 }
 
 .about_me-text{
-    max-width: 250px;
+    max-width: 350px;
     text-align: left;
     line-height: 21px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    transform: translateY(-30px);
+}
+
+h3{
+    color: white;
+    font-size: 40px;
+    height: 20%;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 500;
 }
 
 #plant_head{
     height: 600px;
-    border: 1px solid blue;
-    margin-bottom: 30px;
+    border: 10px solid white;
+    border-radius: 25px;
+    transform: translateY(-60px);
+    position: relative;
+    z-index: 99;
 }
