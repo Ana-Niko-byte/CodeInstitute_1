@@ -86,3 +86,35 @@ a{
         transform: translateY(-150px);
     }
 }
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.socials img{
+    max-width: 40px;
+    padding: 10px;
+}
+
+.about{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.about_me-text{
+    max-width: 250px;
+    padding-right: 60px;
+}
+
+#plant_head{
+    height: 600px;
+    border: 1px solid blue;
+    margin-left: 60px;
+}
