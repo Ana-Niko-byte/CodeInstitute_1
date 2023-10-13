@@ -1,6 +1,6 @@
 :root{
     --lightgreen: rgb(163, 211, 163);
-    --darkgreen: rgb(28, 66, 28);
+    --darkgreen: rgb(55, 103, 55);
     --lightgrey: rgb(209, 209, 209);
     --darkgrey: rgb(34, 34, 34);
 }
@@ -46,9 +46,17 @@ li:nth-child(3){
 
 a{
     text-decoration: none;
-    color: var(--darkgrey);
     border-bottom: 1px solid black;
     color: white;
+    transition: color 0.1s ease;
+}
+
+a:hover{
+    color: var(--darkgreen);
+}
+
+a:active{
+    color: var(--lightgreen);
 }
 
 .header{
@@ -107,9 +115,18 @@ h2{
     border: 1px solid green;
 }
 
-.socials img{
-    max-width: 50px;
+.fa-brands{
     padding: 20px;
+    transition: filter 0.1s ease;
+    margin: 0 10px;
+}
+
+.fa-instagram{
+    margin-right: 30px;
+}
+
+.fa-brands:hover{
+    filter: invert(0.4);
 }
 
 .about{
