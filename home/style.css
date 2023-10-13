@@ -171,3 +171,7 @@ p{
     position: relative;
     z-index: 99;
 }
+
+.plants{
+    border: 3px solid green;
+}
