@@ -120,13 +120,18 @@ h2{
 }
 
 .about{
-    background-image: url("../photos_1/leaves-background.webp");
-    background-position: center;
-    height: 500px;
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 80px 0;
+}
+
+.about_background{
+    background-image: url("../photos_1/leaves-background.webp");
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
 }
 
 .about-over{
@@ -305,7 +310,7 @@ h4{
 
 @media all and (max-width: 700px){
     .blur{
-        height: 520px;
+        height: 325px;
         width: 300px;
     }
 
@@ -317,22 +322,28 @@ h4{
         font-size: 14px;
     }
 
-    .about{
-        margin-top: 60px;
-    }
-
     .socials{
         justify-content: center;
         margin: 0;
     }
 
     #plant_head{
-        max-height: 400px;
+        margin-top: 20px;
+        max-height: 300px;
+        border: 10px solid white;
+    }
+
+    .about{
+        margin: 0;
+    }
+
+    .about_background{
+        height: 800px;
     }
 
     .about-over{
-        border: 2px solid blue;
         flex-flow: column nowrap;
+        height: 800px;
     }
 
     h3{
@@ -341,9 +352,6 @@ h4{
 
     p{
         font-size: 14px;
-    }
-    
-    .about_me-text{
-        border: 2px solid blue;
+        line-height: 20px;
     }
 }
