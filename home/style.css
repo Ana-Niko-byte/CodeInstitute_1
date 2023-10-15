@@ -1,5 +1,5 @@
 :root{
-    --lightgreen: rgb(163, 211, 163);
+    --lightgreen: rgb(176, 227, 176);
     --darkgreen: rgb(55, 103, 55);
     --lightgrey: rgb(209, 209, 209);
     --darkgrey: rgb(34, 34, 34);
@@ -180,45 +180,79 @@ p.intro_about{
     margin-top: 50px;
 }
 
-.plant{
-    border: 1px solid red;
-    max-width: 350px;
+.card-container{
+    width: 180px;
     height: 250px;
-    margin: 40px;
-    padding: 15px;
-    border: 5px solid var(--darkgreen);
+    perspective: 1000px;
+    border: 2px solid black;
     border-radius: 15px;
-    position: relative;
+    margin: 40px;
 }
 
-.plant_image{
-    height: 200px;
-    border-radius: 15px;
+.plant-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .plant-card{
+    transform: rotateY(180deg);
 }
 
 .card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .card-back{
+    height: 100%;
+    width: 100%;
     flex-flow: column nowrap;
-    justify-content: space-between;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    left: 15px;
-    height: 250px;
-    background: white;
+    justify-content: space-around;
+    background-color: rgb(106, 124, 106);
+    color: white;
     text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.plant_image{
+    background-color: var(--darkgreen);
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
 }
 
 h4{
     font-size: 18px;
+    margin-top: 10px;
 }
 
 p.plants{
-    font-size: 14px;
+    font-size: 12px;
+    margin: 15px;
 }
+
+.buy_me{
+    padding: 10px;
+    background-color: white;
+    border: 2px solid var(--darkgreen);
+    outline: none;
+    color: var(--darkgreen);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.buy_me:hover{
+    color: black;
+    font-size: 12px;
+}
+
