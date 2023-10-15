@@ -1,6 +1,6 @@
 :root{
-    --lightgreen: rgb(163, 211, 163);
-    --darkgreen: rgb(28, 66, 28);
+    --lightgreen: rgb(176, 227, 176);
+    --darkgreen: rgb(55, 103, 55);
     --lightgrey: rgb(209, 209, 209);
     --darkgrey: rgb(34, 34, 34);
 }
@@ -17,6 +17,12 @@ nav{
     position: absolute;
     z-index: 99;
     width: 100%;
+}
+
+.logo{
+    max-width: 50px;
+    position: absolute;
+    margin-top: 10px;
 }
 
 ul{
@@ -40,7 +46,39 @@ li:nth-child(3){
 
 a{
     text-decoration: none;
-    color: var(--darkgrey);
     border-bottom: 1px solid black;
     color: white;
+    transition: color 0.1s ease;
+}
+
+a:hover{
+    color: var(--darkgreen);
+}
+
+a:active{
+    color: var(--lightgreen);
+}
+
+footer{
+    background-color: var(--darkgrey);
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.links{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.links a{
+    margin: 0 5px;
+}
+
+h4{
+    font-size: 14px;
 }
