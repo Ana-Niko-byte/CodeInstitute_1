@@ -98,13 +98,6 @@ h2{
     font-size: 18px;
 }
 
-@media all and (max-width: 450px){
-    .blur{
-        height: 520px;
-        width: 300px;
-    }
-}
-
 .socials{
     display: flex;
     flex-direction: row;
@@ -131,45 +124,41 @@ h2{
     background-position: center;
     height: 500px;
     margin-top: 10px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-over{
+    position: absolute;
+    width: 100%;
+    height: 630px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
 }
 
 .about_me-text{
     max-width: 350px;
     text-align: left;
-    line-height: 21px;
-    background-color: white;
+    line-height: 25px;
+    color: white;
+    font-size: 20px;
     padding: 20px;
     border-radius: 15px;
-    transform: translateY(-30px);
 }
 
 h3{
     color: white;
     font-size: 40px;
-    height: 20%;
-}
-
-p.intro_about{
-    font-size: 15px;
-    font-weight: 500;
 }
 
 #plant_head{
     height: 600px;
-    border: 10px solid white;
+    border: 15px solid white;
     border-radius: 25px;
-    transform: translateY(-60px);
-    position: relative;
-    z-index: 99;
+    /* transform: translateY(-60px); */
 }
 
 .plants{
@@ -244,7 +233,6 @@ p.plants{
     padding: 10px;
     background-color: white;
     border: 2px solid var(--darkgreen);
-    outline: none;
     color: var(--darkgreen);
     border-radius: 5px;
     font-weight: 600;
@@ -256,3 +244,83 @@ p.plants{
     font-size: 12px;
 }
 
+.formContainer{
+    padding: 20px;
+    font-size: 12px;
+    display: flex;
+    border-radius: 15px;
+    background-color: var(--lightgrey);
+    position: absolute;
+}
+
+input{
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input:hover{
+    color: var(--darkgreen);
+}
+
+input:focus{
+    border: 1px solid var(--lightgreen);
+}
+
+.submit-payment{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#place-order{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--darkgreen);
+}
+
+@media all and (max-width: 700px){
+    .blur{
+        height: 520px;
+        width: 300px;
+    }
+
+    h1{
+        font-size: 33px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    .about{
+        margin-top: 60px;
+    }
+
+    .socials{
+        justify-content: center;
+        margin: 0;
+    }
+
+    #plant_head{
+        max-height: 400px;
+    }
+
+    .about-over{
+        border: 2px solid blue;
+        flex-flow: column nowrap;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+    
+    .about_me-text{
+        border: 2px solid blue;
+    }
+}
