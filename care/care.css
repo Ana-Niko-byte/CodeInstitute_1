@@ -59,6 +59,46 @@ a:active{
     color: var(--lightgreen);
 }
 
+.problem-intro{
+    background-image: url("../photos_1/long-grass_background.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.problem-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#problems-image{
+    height: 500px;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+}
+
+.problem-text{
+    color: white;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.problem-text p{
+    line-height: 20px;
+    font-size: 16px;
+}
+
 footer{
     background-color: var(--darkgrey);
     color: white;
