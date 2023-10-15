@@ -99,11 +99,9 @@ h2{
 }
 
 .socials{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    height: 75px;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
 }
 
 .fa-brands{
@@ -293,6 +291,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    margin-top: 30px;
 }
 
 .links{
@@ -308,7 +307,7 @@ h4{
     font-size: 14px;
 }
 
-@media all and (max-width: 700px){
+@media all and (max-width: 1100px){
     .blur{
         height: 325px;
         width: 300px;
@@ -323,8 +322,15 @@ h4{
     }
 
     .socials{
+        position: relative;
+        display: flex;
         justify-content: center;
-        margin: 0;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .fa-instagram{
+        margin-right: 0;
     }
 
     #plant_head{
@@ -353,5 +359,15 @@ h4{
     p{
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
     }
+}
+
+.formContainer{
+    display: none;
+}
+
+.payment-toggle:hover + .formContainer{
+    display: block;
+    opacity: 1;
 }
