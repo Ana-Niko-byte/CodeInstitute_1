@@ -161,10 +161,27 @@ h3{
     align-items: center;
 }
 
+.card-back{
+    height: 100%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: rgb(106, 124, 106);
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
 .card_front img{
+    background-color: var(--lightgreen);
     height: 100%;
     width: 100%;
     border-radius: 15px;
+}
+
+h2{
+    font-size: 14px;
 }
 
 footer{
