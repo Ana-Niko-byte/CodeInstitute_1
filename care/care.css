@@ -165,7 +165,7 @@ h3{
     width: 100%;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(200, 200, 200, 0.8);
     color: var(--darkgrey);
     text-align: center;
     transform: rotateY(180deg);
@@ -187,9 +187,9 @@ h2{
 }
 
 p{
-    font-size: 13px;
+    font-size: 10px;
     line-height: 15px;
-    color: var(--darkgreen);
+    color: var(--darkgrey);
     margin: 10px;
 }
 
@@ -208,16 +208,22 @@ span{
 
 .humidity i, .poor_soil i, .low-flow i, .waterlogged i{
     position: absolute;
-    margin: 0 5px;
 }
 
-.low-flow{
-    margin-left: 18px;
+.low-flow {
+    margin-left: 22px;
+}
+
+.humidity{
+    margin-left: 6px;
 }
 
 i{
     transform: scale(1.2);
+    margin: 0 4px;
 }
+
+
 
 footer{
     background-color: var(--darkgrey);
