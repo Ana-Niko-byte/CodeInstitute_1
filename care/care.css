@@ -122,7 +122,6 @@ h3{
     background-image: url("../photos_1/long-grass_background.jpeg");
     background-position: center;
     background-size: cover;
-    border: 4px solid orange;
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -166,8 +165,8 @@ h3{
     width: 100%;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-color: rgb(106, 124, 106);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--darkgrey);
     text-align: center;
     transform: rotateY(180deg);
     border-radius: 15px;
@@ -182,6 +181,19 @@ h3{
 
 h2{
     font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+p{
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--darkgreen);
+}
+
+span{
+    font-weight: 600;
+    letter-spacing: 0.4px;
 }
 
 footer{
