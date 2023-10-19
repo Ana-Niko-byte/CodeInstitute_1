@@ -60,10 +60,6 @@ a:active{
 }
 
 .problem-intro{
-    background-image: url("../photos_1/long-grass_background.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 800px;
     display: flex;
     align-items: center;
 }
@@ -74,21 +70,44 @@ a:active{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    margin: 100px 0;
 }
 
 #problems-image{
     height: 500px;
-    border: 10px solid white;
+    border: 10px solid var(--darkgrey);
     border-radius: 20px;
 }
 
+.headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3{
+    color: var(--darkgrey);
+    margin: 5px 0;
+}
+
 h1{
-    color: white;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 14px;
 }
 
 .problem-text{
-    color: white;
+    color: var(--darkgrey);
     max-width: 450px;
     display: flex;
     align-items: center;
@@ -97,6 +116,55 @@ h1{
 .problem-text p{
     line-height: 20px;
     font-size: 16px;
+}
+
+.common_problems{
+    background-image: url("../photos_1/long-grass_background.jpeg");
+    background-position: center;
+    background-size: cover;
+    border: 4px solid orange;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.individual-container{
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 20px;
+    width: 180px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.card-container_problem{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.individual-container:hover .card-container_problem{
+    transform: rotateY(-180deg);
+}
+
+.card_front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_front img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
 }
 
 footer{
