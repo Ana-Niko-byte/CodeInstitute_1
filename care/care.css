@@ -196,6 +196,19 @@ span{
     letter-spacing: 0.4px;
 }
 
+.icon_container{
+    width: 100%;
+}
+
+.humidity i{
+    position: absolute;
+    margin: 0 5px;
+}
+
+.fa-percent{
+    transform: scale(0.5);
+}
+
 footer{
     background-color: var(--darkgrey);
     color: white;
