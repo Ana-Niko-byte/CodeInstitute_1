@@ -165,7 +165,7 @@ h3{
     width: 100%;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(177, 177, 177, 0.8);
     color: var(--darkgrey);
     text-align: center;
     transform: rotateY(180deg);
@@ -183,19 +183,20 @@ h2{
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: var(--darkgreen);
+    color: white;
 }
 
 p{
     font-size: 10px;
     line-height: 15px;
-    color: var(--darkgrey);
+    color: white;
     margin: 10px;
 }
 
 span{
     font-weight: 600;
     letter-spacing: 0.4px;
+    color: var(--darkgreen);
 }
 
 .icon_container{
@@ -223,7 +224,24 @@ i{
     margin: 0 4px;
 }
 
+.contact{
+    height: 75px;
+    transform: translateY(-35px);
+}
 
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: 10px solid white;
+    border-radius: 15px;
+    padding: 20px 70px;
+    background-color: var(--darkgreen);
+    color: white;
+}
 
 footer{
     background-color: var(--darkgrey);
@@ -247,4 +265,10 @@ footer{
 
 h4{
     font-size: 14px;
+}
+
+@media all and (max-width: 400px) {
+    .common_problems{
+        padding: 50px 0;
+    }
 }
