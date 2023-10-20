@@ -263,7 +263,31 @@ button:active{
 }
 
 form{
-    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    padding: 20px;
+    background-color: var(--lightgrey);
+    width: 400px;
+    border-radius: 10px;
+}
+
+.general{
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+input, textarea{
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 10px;
+    width: 100%;
 }
 
 footer{
