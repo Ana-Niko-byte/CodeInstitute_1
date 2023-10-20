@@ -20,11 +20,11 @@
             <img src="../photos_1/roots-2.jpeg" alt="plant roots" id="problems-image">
             <div class="headings">
                 <h1>Step 1:</h1>
-                <h2>Identify the Root Cause</h2>
+                <h2 id="title">Identify the Root Cause</h2>
                 <h3>(Pun Intended)</h3>
             </div>
             <div class="problem-text">
-                <p class="problem-text-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque perspiciatis veritatis hic ipsam, ut velit alias! Voluptates et ipsam enim sint molestiae eaque maiores non dolore voluptatem ullam. Enim quod inventore non dolorum! Voluptate saepe placeat animi exercitationem dolores quaerat tempore, illo suscipit. Explicabo praesentium obcaecati perferendis omnis enim eum nemo, aperiam laboriosam, nam laborum pariatur dignissimos error maxime iure dicta? Fuga deleniti molestiae autem accusantium fugiat quasi ullam quidem, ipsa sunt laboriosam sit doloribus nulla sequi nostrum labore illo aliquid possimus hic voluptatum exercitationem, dicta incidunt, delectus ad. Minima quos at consequatur, tempore quisquam fugit fugiat nihil. Fuga, labore!</p>
+                <p id="problem-text-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque perspiciatis veritatis hic ipsam, ut velit alias! Voluptates et ipsam enim sint molestiae eaque maiores non dolore voluptatem ullam. Enim quod inventore non dolorum! Voluptate saepe placeat animi exercitationem dolores quaerat tempore, illo suscipit. Explicabo praesentium obcaecati perferendis omnis enim eum nemo, aperiam laboriosam, nam laborum pariatur dignissimos error maxime iure dicta? Fuga deleniti molestiae autem accusantium fugiat quasi ullam quidem, ipsa sunt laboriosam sit doloribus nulla sequi nostrum labore illo aliquid possimus hic voluptatum exercitationem, dicta incidunt, delectus ad. Minima quos at consequatur, tempore quisquam fugit fugiat nihil. Fuga, labore!</p>
             </div>
         </div>
     </section>
@@ -144,6 +144,16 @@
         <div class="button-container">
             <button>Ask a Question</button>
         </div>
+        <form action="post" id="issue">
+            <label for="name">Name:*</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+            <label for="email">Email:*</label>
+            <input type="email" id="email" name="email" placeholder="j.doe@example.com" required><br>
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" placeholder="012 345 6789"><br>
+            <label for="message">Message:*</label>
+            <textarea name="message" id="message" cols="30" rows="10" required>Describe your issue...</textarea>
+        </form>
     </section>
     <footer>
         <div class="links">

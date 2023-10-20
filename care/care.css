@@ -97,9 +97,11 @@ h1{
     padding: 20px;
 }
 
-h2{
+#title{
     font-size: 20px;
     font-weight: 700;
+    color: var(--darkgrey);
+    text-transform: capitalize;
 }
 
 h3{
@@ -113,9 +115,10 @@ h3{
     align-items: center;
 }
 
-.problem-text p{
+#problem-text-paragraph{
     line-height: 20px;
     font-size: 16px;
+    color:var(--darkgrey);
 }
 
 .common_problems{
@@ -224,16 +227,14 @@ i{
     margin: 0 4px;
 }
 
-.contact{
-    height: 50px;
-}
-
-.button-container{
+.contact, .button-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    border: 1px solid orange;
+}
+
+.contact{
+    flex-flow: column nowrap;
 }
 
 button{
@@ -243,7 +244,7 @@ button{
     background-color: var(--darkgreen);
     color: white;
     font-size: 15px;
-    position: absolute;
+    width: 300px;
 }
 
 button:hover{
@@ -253,6 +254,16 @@ button:hover{
 button:active{
     background-color: rgb(23, 43, 23);
     font-size: 14px;
+}
+
+.issue-text{
+    color: var(--darkgreen);
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+form{
+    border: 1px solid red;
 }
 
 footer{
