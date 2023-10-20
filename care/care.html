@@ -146,15 +146,17 @@
         </div>
         <form action="post" id="issue">
             <div class="general">
-                <label for="name">Name:*</label>
+                <label for="name">Name <span class="question-form">*</span></label>
                 <input type="text" id="name" name="name" placeholder="John Doe" required><br>
-                <label for="email">Email:*</label>
+                <label for="email">Email <span class="question-form">*</span></label>
                 <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br>
-                <label for="number">Number:</label>
+                <label for="number">Number</label>
                 <input type="text" id="number" name="number" placeholder="012 345 6789"><br>
             </div>
-            <label for="message">Message:*</label>
-            <textarea name="message" id="message" cols="30" rows="10" required>Describe your issue...</textarea>
+            <div class="textarea-message">
+                <label for="message">Message <span class="question-form">*</span></label>
+                <textarea name="message" id="message" cols="30" rows="10" required>Describe your issue...</textarea>
+            </div>
         </form>
     </section>
     <footer>

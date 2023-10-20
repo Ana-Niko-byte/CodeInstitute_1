@@ -267,27 +267,54 @@ form{
     justify-content: space-between;
     align-items: flex-start;
     flex-flow: column nowrap;
-    padding: 20px;
-    background-color: var(--lightgrey);
-    width: 400px;
+    background-color: rgb(235, 235, 235);
+    max-width: 400px;
+    height: 250px;
     border-radius: 10px;
+    border: 1px solid blue;
+    padding: 20px;
 }
 
 .general{
     margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.textarea-message{
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 label{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
-    margin-right: 5px;
 }
 
 input, textarea{
-    padding: 5px;
-    margin: 5px 0;
+    margin: 5px 0px;
     font-size: 10px;
-    width: 100%;
+    outline: none;
+    border: 1px solid rgb(235, 235, 235);
+    transition: border 0.1s ease;
+}
+
+textarea{
+    max-width: 100%;
+}
+
+input:hover, textarea:hover{
+    border: 1px solid var(--lightgreen);
+}
+
+input:focus, textarea:focus{
+    border: 1px solid var(--darkgreen);
+}
+
+.question-form{
+    color: rgb(255, 56, 56);
 }
 
 footer{
