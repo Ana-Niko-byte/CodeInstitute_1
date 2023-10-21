@@ -46,7 +46,6 @@ li:nth-child(3){
 
 a{
     text-decoration: none;
-    border-bottom: 1px solid black;
     color: white;
     transition: color 0.1s ease;
 }
@@ -90,7 +89,7 @@ a:active{
 
 h1{
     margin: 20px 0;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 h2{
@@ -126,7 +125,8 @@ h2{
 
 .about_background{
     background-image: url("../photos_1/full-green.avif");
-    filter: blur(2px);
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
     background-position: center;
     height: 500px;
     width: 100%;
@@ -155,7 +155,7 @@ h2{
 
 h3{
     color: white;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 #plant_head{
