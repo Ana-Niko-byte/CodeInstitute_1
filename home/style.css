@@ -125,7 +125,8 @@ h2{
 }
 
 .about_background{
-    background-image: url("../photos_1/leaves-background.webp");
+    background-image: url("../photos_1/full-green.avif");
+    filter: blur(2px);
     background-position: center;
     height: 500px;
     width: 100%;

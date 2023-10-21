@@ -59,6 +59,21 @@ a:active{
     color: var(--lightgreen);
 }
 
+.background{
+    background-image: url("../photos_1/plant_wall-background.avif");
+    height: 500px;
+    background-size: cover;
+    background-position: right;
+    border-bottom: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headings{
+    text-align: center;
+}
+
 .problem-intro{
     display: flex;
     align-items: center;
@@ -68,7 +83,7 @@ a:active{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 100px 0;
 }
@@ -77,13 +92,6 @@ a:active{
     height: 500px;
     border: 10px solid var(--darkgrey);
     border-radius: 20px;
-}
-
-.headings{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 h1, h2, h3{
@@ -113,6 +121,10 @@ h3{
     max-width: 450px;
     display: flex;
     align-items: center;
+}
+
+.problem-text, #problems-image{
+    margin: 0 30px;
 }
 
 #problem-text-paragraph{
@@ -237,21 +249,24 @@ i{
     flex-flow: column nowrap;
 }
 
-button{
-    border: 10px solid white;
-    border-radius: 15px;
-    padding: 20px 70px;
+.toggle-button-label{
     background-color: var(--darkgreen);
     color: white;
-    font-size: 15px;
-    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
 }
 
-button:hover{
+#toggle-button{
+    position: absolute;
+}
+
+.toggle-button-label:hover{
     background-color: rgb(32, 60, 32);
 }
 
-button:active{
+.toggle-button-label:active{
     background-color: rgb(23, 43, 23);
     font-size: 14px;
 }
@@ -270,6 +285,18 @@ form{
     max-width: 400px;
     border-radius: 10px;
     padding: 20px;
+    position: relative;
+}
+
+.form-container{
+    visibility: hidden;
+    position: absolute;
+    bottom: -1000px;
+    border: 1px solid red;
+}
+
+#toggle-button:checked + .form-container{
+    visibility: visible;
 }
 
 .general-inputs{
