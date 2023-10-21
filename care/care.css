@@ -315,6 +315,13 @@ input:focus, textarea:focus{
     color: rgb(255, 56, 56);
 }
 
+#submit{
+    padding: 4px;
+    width: 100px;
+    border-color: rgb(235, 235, 235);
+    transform: translateX(50px) translateY(35px);
+}
+
 footer{
     background-color: var(--darkgrey);
     color: white;
