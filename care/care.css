@@ -292,6 +292,12 @@ i{
     line-height: 18px;
 }
 
+.guide{
+    border: 1px solid red;
+    background-color: var(--lightgrey);
+    max-width: 250px;
+}
+
 .contact, .button-container{
     display: flex;
     justify-content: center;
