@@ -164,7 +164,19 @@ article{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+}
+
+.rotate{
+    transform: rotate(-90deg);
+}
+
+.rotate h3{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .card-container_problem{
@@ -173,6 +185,8 @@ article{
     height: 250px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 .individual-container:hover .card-container_problem{
@@ -194,7 +208,7 @@ article{
     width: 200px;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-color: rgba(177, 177, 177, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: var(--darkgrey);
     text-align: center;
     transform: rotateY(180deg);
