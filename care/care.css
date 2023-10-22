@@ -63,7 +63,6 @@ a:active{
     height: 500px;
     background-size: cover;
     background-position: right;
-    border-bottom: 5px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,10 +80,16 @@ a:active{
 .problem-container{
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row-reverse wrap;
     justify-content: center;
     align-items: center;
     height: 400px;
+}
+
+#problem-span{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 #problems-image{
@@ -136,6 +141,7 @@ h3{
     line-height: 20px;
     font-size: 16px;
     color:var(--darkgrey);
+    font-size: 14px;
 }
 
 .common_problems{
