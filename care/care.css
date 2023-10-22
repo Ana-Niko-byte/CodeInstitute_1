@@ -384,40 +384,28 @@ input:focus, textarea:focus{
 footer{
     background-color: var(--darkgrey);
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px;
-    margin-top: 30px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright h4{
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .footer-links{
     display: flex;
     flex-flow: row-reverse wrap;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.socials-footer, .links{
-    padding: 15px;
-}
-
-.links{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.links a{
-    margin: 0 5px;
-}
-
-h4{
-    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .socials-footer a{
-    margin: 0 10px;
+    margin: 0 15px;
     transition: filter 0.1s ease;
 }
 
@@ -425,8 +413,13 @@ h4{
     filter: invert(0.4);
 }
 
-.copyright h4{
-    font-weight: 200;
+.links{
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.links a{
+    margin: 0 15px;
 }
 
 @media all and (max-width: 400px) {
