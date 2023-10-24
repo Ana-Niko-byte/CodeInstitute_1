@@ -75,15 +75,13 @@ a:active{
 .problem-intro{
     display: flex;
     align-items: center;
-}
-
-.problem-container{
     width: 100%;
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: center;
     align-items: center;
     height: 400px;
+    border: 3px solid yellow;
 }
 
 #problem-span{
@@ -149,34 +147,50 @@ h3{
     background-position: center;
     background-size: cover;
     padding: 50px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 article{
-    width: 100%;
+    min-width: 300px;
     margin: 30px 0;
     border-radius: 15px;
     border: 2px solid white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .individual-container{
-    width: calc(100%-12px); /* so the container doesn't overflow */
     perspective: 1000px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
 }
 
-.rotate{
-    transform: rotate(-90deg);
+.recommendation{
+    margin-left: 20px;
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
-.rotate h3{
+.recommendation h3{
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
     color: white;
-    font-size: 1.6rem;
-    font-weight: 500;
     text-transform: uppercase;
+    font-weight: 300;
+}
+
+.recommendation p{
+    font-size: 0.8rem;
+    line-height: 18px;
 }
 
 .card-container_problem{
@@ -269,33 +283,6 @@ span{
 i{
     transform: scale(1.2);
     margin: 0 4px;
-}
-
-.individual-text{
-    max-width: 400px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-}
-
-.individual-text h3{
-    font-weight: 900;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-.individual-text p{
-    font-size: 0.8rem;
-    line-height: 18px;
-}
-
-.guide{
-    border: 1px solid red;
-    background-color: var(--lightgrey);
-    max-width: 250px;
 }
 
 .contact, .button-container{
