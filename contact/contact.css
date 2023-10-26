@@ -72,6 +72,7 @@ a{
     border-radius: 5px;
     position: absolute;
     left: 400px;
+    z-index: 99;
 }
 
 .detail{
@@ -130,6 +131,9 @@ i{
     padding: 30px;
     background-color: var(--lightgreen);
     border-radius: 10px;
+    width: 400px;
+    position: relative;
+    left: 70px;
 }
 
 label{
